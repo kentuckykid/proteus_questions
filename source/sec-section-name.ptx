@@ -1,75 +1,200 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <section xml:id="sec-section-name" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Section Title</title>
+  <title>PreTeXt Section 1.2 Exercises</title>
+     <exercise component="proteus" label="ula_proteus_Section_1_2_RREF_using_EROs_v1">
+      <title>Do elementary row operations to achieve RREF</title>
+      <statement>
+        <p>
+          The following matrices each require one or a sequence of two EROs 
+          to convert them to RREF. For each matrix choose the ERO or 
+          sequence that will convert it to RREF. Some of the EROs or sequences of EROs 
+          in the list will not be used.
+        </p>
+      </statement>
+      <matches>
+        <match>
+          <premise>
+            <m>\frac{1}{5}R_3\rightarrow R_3</m>
+          </premise>
+         
+          <response>
+            <me>\left[\begin{array}{rrrr}
+		        1 \amp 0 \amp 0 \amp -4 \\
+		        0 \amp 1 \amp 0 \amp 2\\
+		        0 \amp 0 \amp 5 \amp 10 \\
+		        \end{array} \right]</me>
+          </response>
+        </match>	
+		
+        <match>
+          <premise>
+            <m>R_3-5R_2\rightarrow R_3</m>
+          </premise>
+         
+          <response>
+            <me>\left[\begin{array}{rrrr}
+	          1 \amp 0 \amp 0 \amp 6 \\
+	          0 \amp 1 \amp 0 \amp 3\\
+	          0 \amp 5 \amp 0 \amp 15 \\
+            \end{array} \right]</me>
+          </response>
+        </match>	
+		
+        <match>
+          <premise>
+            <m>R_1\leftrightarrow R_3</m>
+          </premise>
+         
+          <response>
+            <me>\left[\begin{array}{rrrr}
+	          0 \amp 0 \amp 0 \amp 1 \\
+	          0 \amp 0 \amp 1 \amp 0 \\
+	          1 \amp -5 \amp 0 \amp 0\\
+            \end{array} \right]</me>
+          </response>
+        </match>	
+		
+        <match>
+          <premise>
+            <m>R_2\leftrightarrow R_3</m> then <m>\frac{1}{5}R_2 \rightarrow R_2</m>
+          </premise>
+         
+          <response>
+            <me>\left[\begin{array}{rrr}
+	          1 \amp 0 \amp 0  \\
+	          0 \amp 0 \amp 1 \\
+	          0 \amp 5 \amp 0 \\
+		        \end{array} \right]</me>
+          </response>
+        </match>			
 
+        <match>
+          <premise>
+            <m>R_2\leftrightarrow R_3</m> then <m>R_1+5R_2\rightarrow R_1</m>
+          </premise>
+         
+          <response>
+            <me>\left[\begin{array}{rrrr}
+		        1 \amp -5 \amp -1 \amp 5 \\
+		        0 \amp 0 \amp 0 \amp 0\\
+		        0 \amp 1 \amp 1 \amp 11 \\
+	          \end{array} \right]</me>
+          </response>
+        </match>			
+		
+       <match>
+          <premise>
+            <m>R_2+5R_1 \rightarrow R_2</m> then <m>R_1-5R_2 \rightarrow R_1</m>
+          </premise>
+         
+          <response>
+            <me>\left[\begin{array}{rrrr}
+		        1 \amp 4 \amp -2 \amp 5 \\
+		        -5 \amp -20 \amp 10 \amp -24\\
+		        0\amp 0\amp 0\amp 0
+	          \end{array} \right]</me>
+          </response>
+        </match>
+		
+		    <match>
+          <premise>  <m>5R_3\rightarrow R_3</m></premise>
+          <premise>  <m>R_3+5R_2\rightarrow R_3</m></premise>
+          <premise>  <m>R_1\leftrightarrow R_2</m></premise>
+			    <premise><m>R_2\leftrightarrow R_3</m> then <m>5R_2 \rightarrow R_2</m></premise>
+          <premise><m>R_1+5R_2\rightarrow R_1</m> then <m>R_2\leftrightarrow R_3</m></premise>
+          <premise><m>R_1-5R_2 \rightarrow R_1</m> then <m>R_2+5R_1 \rightarrow R_2</m></premise>
+          <premise><m>\frac{1}{5}R_2 \rightarrow R_2</m> then <m>R_2\leftrightarrow R_3</m></premise>
+        </match>
+      </matches>
+    </exercise>
 
-    <exercise label="number-theory-proof" adaptive="yes">
-  <title>Parsons Problem, Mathematical Proof</title>
-  <idx>even numbers</idx>
-  <statement>
-    <p>
-      Create a proof of the theorem: If <m>n</m> is an even number,
-      then <m>n\equiv 0\mod 2</m>.
-    </p>
-  </statement>
-  <blocks>
-  <block order="2">
-  <p>
-    Suppose <m>n</m> is even.
-  </p>
-  </block>
-  <block order="3">
-  <choice>
-  <p>
-    Then <m>n</m> is a prime number.
-  </p>
-  </choice>
-  <choice correct="yes">
-  <p>
-    Then there exists an <m>m</m> so that <m>n = 2m</m>.
-  </p>
-  </choice>
-  <choice>
-  <p>
-    Then there exists an <m>m</m> so that <m>n = 2m + 1</m>.
-  </p>
-  </choice>
-  </block>
-  <block order="1" correct="no">
-  <p>
-    Click the heels of your ruby slippers together three times.
-  </p>
-  </block>
-  <block order="5">
-  <p>
-    So <m>n = 2m + 0</m>.
-  </p>
-  <p>
-    This is a superfluous second paragraph in this block.
-  </p>
-  </block>
-  <block order="4">
-  <p>
-    Thus <m>n\equiv 0\mod 2</m>.
-  </p>
-  </block>
-  <block order="6" correct="no">
-  <p>
-    And a little bit of irrelevant multi-line math
-    <md>
-      <mrow>c^2&amp;a^2+b^2</mrow>
-      <mrow>&amp;x^2+y^2</mrow>
-    </md>.
-  </p>
-  </block>
-  </blocks>
-  <hint>
-    <p>
-      Dorothy will not be much help with this proof.
-    </p>
-  </hint>
-  </exercise>
-
+    <exercise component="proteus" label="ula_proteus_Section_1_2_Solutions_from_RREF_v1">
+      <title>Determine number of solutions from RREF.</title>
+      <statement>
+        <p>
+          Each of the following is the RREF of a linear system in augmented matrix form. 
+          The symbol <m>*</m> represents an unknown real number.  
+          For each associated linear system, choose the correct response.
+        </p>
+      </statement>
+      <matches>
+        <match>
+          <premise>
+            <me>\left[ \begin{array}{rrr|r}
+				    1 \amp 0 \amp 0 \amp * \\
+				    0 \amp 1 \amp 0 \amp * \\
+				    0 \amp 0 \amp 1 \amp * \\
+            \end{array}\right]
+            </me>
+          </premise>
+          <premise>
+            <me>  \left[\begin{array}{rr|r}
+            1 \amp 0 \amp  * \\
+            0 \amp 1 \amp  *\\
+            0 \amp 0 \amp  0 \\
+            \end{array} \right]</me>
+          </premise>
+          <response>
+            The linear system has one and only one solution.
+          </response>
+        </match>
+        <match>
+          <premise>
+            <me>\left[\begin{array}{rrr|r}
+	          1 \amp 0 \amp * \amp * \\
+	          0 \amp 1 \amp * \amp *\\
+	          0 \amp 0 \amp 0 \amp 1 \\
+            \end{array} \right]
+            </me>
+          </premise>
+          <response>
+            The linear system has no solution.
+          </response>
+        </match>
+        <match>
+          <premise>
+            <me>\left[\begin{array}{rrr|r}
+	          1 \amp * \amp 0 \amp * \\
+	          0 \amp 0 \amp 1 \amp *\\
+	          0 \amp 0 \amp 0 \amp 0 \\
+            \end{array} \right]
+            </me>
+          </premise>
+          <premise>
+            <me>\left[\begin{array}{rrr|r}
+	          0 \amp 1 \amp 0 \amp * \\
+	          0 \amp 0 \amp 1 \amp *\\
+	          0 \amp 0 \amp 0 \amp 0 \\
+            \end{array} \right]
+            </me>
+          </premise>
+          <premise>
+            <me>\left[\begin{array}{rrr|r}
+            1 \amp 0 \amp * \amp 0 \\
+            0 \amp 1 \amp * \amp 1\\
+            0 \amp 0 \amp 0 \amp 0 \\
+            \end{array} \right]
+            </me>
+          </premise>
+          <response>
+            The linear system has infinitely many solutions.
+          </response>
+        </match>
+        <match>
+          <premise>
+            <me>\left[\begin{array}{rrr|r}
+          	1 \amp 0 \amp * \amp * \\
+	          0 \amp 1 \amp * \amp *\\
+	          0 \amp 0 \amp 0 \amp * \\
+            \end{array} \right]
+            </me>
+          </premise>
+          <response>
+            More information is needed to determine the number of solutions.
+          </response>
+        </match>
+      </matches>
+    </exercise>
 
 </section>
