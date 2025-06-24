@@ -12,13 +12,6 @@
       Create a proof of the theorem: If <m>n</m> is an even number,
       then <m>n\equiv 0\mod 2</m>.
     </p>
-    <p>
-      [Ed.
-      If you examine the source,
-      you will also notice the <tag>exercise</tag> lacks a <attr>language</attr> attribute.
-      It is relying on the <c>docinfo/parsons/@language</c> value that is in bookinfo.xml.
-      If present, that attribute will be used for any Parsons that lack a <attr>language</attr>.]
-    </p>
   </statement>
   <blocks>
   <block order="2">
