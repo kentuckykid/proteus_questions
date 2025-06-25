@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <chapter xml:id="ch-chapter-title" xmlns:xi="http://www.w3.org/2001/XInclude">
-  <title>Chapter Title</title>
+  <title>PROTEUS Exercises</title>
 
   <introduction>
-    <p> Text before the first section. </p>
+    <p> A few exercises developed during the June 2025 Workshop in Ann Arbor. </p>
   </introduction>
 
   <!-- include sections -->
-  <xi:include href="sec-section-name.ptx" />
-
+  <xi:include href="sec-1-2.ptx" />
+  <xi:include href="sec-2-2.ptx" />
+  <xi:include href="sec-2-3.ptx" />
 </chapter>

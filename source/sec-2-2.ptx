@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-ula-exercises-2-2" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>PROTEUS ULA Exercises - Section 2.1-2.2</title>
+    <exercise component="proteus" label="ula_proteus_Section_2_2_Linear_Combinations_v1">
+      <title>Checking whether a vector is a linear combination of other vectors</title>
+      <statement>
+        <p>Explain how you would determine whether a given vector <m>\vvec</m> in <m>\real^n</m> 
+          is a linear combination of a given set of vectors <m>\xvec_1</m>, <m>\xvec_2</m>, <m>\xvec_3</m> 
+          in <m>\real^n</m>.</p>
+      </statement>
+      <response/>
+    </exercise>
+
+    <exercise component="proteus" label="ula_proteus_Section_2_2_Linear_Combinations2_v1">
+      <title>Write a vector as a linear combination of other vectors in three ways</title>
+      <statement>
+        <p>Express the vector <m>\vvec =\threevec{8}{-7}{-17} </m> as a linear combination of
+          <m> \xvec_1= \threevec1{-1}2,
+          \xvec_2 = \threevec{-1}21,
+          \xvec_3 = \threevec3{-2}{-7}</m>
+          in three different ways. Explain how you arrived at your three different expressions. </p>
+        </statement>
+      <response/>
+    </exercise>
+
+    <exercise component="proteus" label="ula_proteus_Section_2_2_Linear_Combinations3_v1">
+      <title>The connection between linear combinations and matrix multiplication</title>
+      <statement>
+        <p>Suppose <m>\vvec_1</m>, <m>\vvec_2</m>, <m>\vvec_3</m> 
+          are vectors in <m>\real^3</m>, and let 
+          <m>A=\left[ \begin{array}{ccc} \vvec_1 \amp \vvec_2 \amp \vvec_3\end{array}\right]</m>.  
+          Suppose that a solution to 
+          <m>A\xvec= \threevec{11}{5}{-7} </m> 
+          is given by <m>\xvec = \threevec4{-1}2</m>.
+          Find constants <m>c_1</m>, <m>c_2</m>, and <m>c_3</m> with
+          <me>c_1 \vvec_1 + c_2 \vvec_2 + c_3\vvec_3 = 
+          \threevec{11}{5}{-7}</me>.
+          Explain your thinking.</p>
+        </statement>
+      <response/>
+    </exercise>
+
+</section>

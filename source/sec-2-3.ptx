@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="sec-ula-exercises-2-3" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>PROTEUS ULA Exercises - Section 2.3</title>
+    <exercise component="proteus" label="ula_proteus_Section_2_3_Span_Matching_True_False_Sometimes_v1">
+      <title>Understanding Span - True/False/Sometimes</title>
+      <statement>
+        <p>Determine whether each of the statements in the left column is always true, always false, or sometimes true.</p>
+      </statement>
+      <cardsort>
+        <match>
+          <premise>
+            If <m>\bvec</m> is in <m>\laspan{\vvec_1,\vvec_2,\vvec_1+\vvec_2}</m>, then
+            <m>\bvec</m> is in <m>\laspan{\vvec_1,\vvec_2}</m>.
+          </premise>
+          <premise>
+            If <m>\vvec_1,\ldots,\vvec_{23}</m> are vectors
+            in <m>\real^{23}</m> and <m>A= \left[\begin{array}{rrrr} \vvec_1\amp\vvec_2\amp\cdots\amp\vvec_{23}\end{array}\right]</m>  has a pivot in every column, then
+            <m>\laspan{\vvec_1,\ldots,\vvec_{23}}=\real^{23}</m>.
+          </premise>
+          <premise>
+            If <m>\vvec_1,\ldots,\vvec_{23}</m> are vectors
+            in <m>\real^{23}</m> and <m>\laspan{\vvec_1,\ldots,\vvec_{23}}=\real^{23}</m>, then 
+            <m>A= \left[\begin{array}{rrrr} \vvec_1\amp\vvec_2\amp\cdots\amp\vvec_{23}\end{array}\right]</m> 
+            has a pivot in every column.
+          </premise>
+          <response>
+            Always True
+          </response>
+        </match>
+        <match>
+          <premise>
+            If <m>\vvec_1,\ldots,\vvec_{22}</m> is a set of 22 vectors in <m>\real^{23}</m>,
+            then  <m>\laspan{\vvec_1,\ldots,\vvec_{22}}=\real^{23}</m>.
+          </premise>
+          <response>
+            Always False
+          </response>
+        </match>
+        <match>
+          <premise>
+            If <m>\vvec_1</m> and <m>\vvec_2</m> are vectors in <m>\real^3</m>, then 
+            <m>\laspan{\vvec_1,\vvec_2}</m> is a plane.
+          </premise>
+          <premise>
+            If <m>\vvec_1,\ldots,\vvec_{23}</m> are vectors
+            in <m>\real^{23}</m>, then <m>\laspan{\vvec_1,\ldots,\vvec_{23}}=\real^{23}</m>.
+          </premise>
+          <premise>
+            If <m>\vvec_1,\ldots,\vvec_{n}</m> are vectors
+            in <m>\real^{23}</m> and <m>\laspan{\vvec_1,\ldots,\vvec_{n}}=\real^{23}</m>,
+            then <m>n=23</m>.
+          </premise>
+          <response>
+            Sometimes True
+          </response>
+        </match>
+      </cardsort>
+    </exercise>
+
+</section>
